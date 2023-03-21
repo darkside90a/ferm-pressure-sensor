@@ -1,0 +1,13 @@
+On ads1115raw#Value Do
+ Let,10,[VAR#9]
+ Let,9,[VAR#8]
+ Let,8,[VAR#7]
+ Let,7,[VAR#6]
+ Let,6,[VAR#5]
+ Let,5,[VAR#4]
+ Let,4,[VAR#3]
+ Let,3,[VAR#2]
+ Let,2,[VAR#1]
+ Let,1,[ads1115raw#Value]
+ TaskValueSet,2,1,([VAR#1]+[VAR#2]+[VAR#3]+[VAR#4]+[VAR#5]+[VAR#6]+[VAR#7]+[VAR#8]+[VAR#9]+[VAR#10])/10
+EndOn
