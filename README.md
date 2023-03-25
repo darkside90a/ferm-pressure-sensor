@@ -19,10 +19,15 @@ ESPEasy is used as firmware on the D1 mini.
 
 I created two devices: One collecting raw data from the ADS1115 every 2s and Gain set to 2/3x. The second one is a Dummy Device collecting average data from every 10th measurement every 15s via Rules (beer-ferm-rules1.txt).
 
-Measurements are sent to Home Assistant via MQTT. This is how it could look like in the beginning of a brew:
+Measurements are sent to Home Assistant via MQTT.
+
+This is how it could look like in the beginning of a (lager) brew:
 ![fermpress-20230313](https://user-images.githubusercontent.com/52971840/226713482-214738cd-4bbb-4ea8-8b6b-ff72ec519b5a.png)
-The only Formula I have used, is "%value%-1200" for the raw device, only for getting numbers down to human levels. The interesting part is the curve itself.
-When fermentation "stops", i.e.: no more plops, you would see from the curve there might still be pressure, and maybe a "plop" every 2 - 3hrs.
+The only Formula I have used, is "%value%-1200" for the raw device, just for getting numbers down to more human levels. The interesting part is the curve itself.
+
+This is how it looked like at the end of the same brew. There was still pressure in the fermentor 3-4 days after the last visible "plop". At 19:00, fermentation has definitely finished:
+![beer-fermpress-20230325-2133](https://user-images.githubusercontent.com/52971840/227740792-bc734bb3-2ba0-418c-a37d-3884c41c2a9d.png)
+
 
 This is how it looks like inside the box:
 ![P1010701](https://user-images.githubusercontent.com/52971840/226715680-365029eb-1f24-44b8-9973-c47f08e1d189.JPG)
